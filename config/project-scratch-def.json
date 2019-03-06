@@ -1,0 +1,7 @@
+{
+    "orgName": "my-dx-box",
+    "edition": "Developer",
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"]
+    }
+}
