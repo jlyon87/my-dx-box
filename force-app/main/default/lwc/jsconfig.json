@@ -2,7 +2,32 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/bike-card": [
+                "bikeCard/bikeCard.js"
+            ],
+            "c/data": [
+                "data/data.js"
+            ],
+            "c/detail": [
+                "detail/detail.js"
+            ],
+            "c/hello-web-component": [
+                "helloWebComponent/helloWebComponent.js"
+            ],
+            "c/hello-world": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/list": [
+                "list/list.js"
+            ],
+            "c/selector": [
+                "selector/selector.js"
+            ],
+            "c/tile": [
+                "tile/tile.js"
+            ]
+        }
     },
     "include": [
         "**/*",
