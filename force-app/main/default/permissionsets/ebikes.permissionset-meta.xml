@@ -10,4 +10,8 @@
         <tab>Bike_Card</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <tabSettings>
+        <tab>Bike_Events</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
