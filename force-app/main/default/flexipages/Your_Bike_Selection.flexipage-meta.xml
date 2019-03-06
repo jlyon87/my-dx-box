@@ -7,7 +7,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Bike Events</masterLabel>
+    <masterLabel>Your Bike Selection</masterLabel>
     <template>
         <name>flexipage:defaultAppHomeTemplate</name>
     </template>
