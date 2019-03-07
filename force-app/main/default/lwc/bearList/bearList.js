@@ -1,4 +1,5 @@
-import { NavigationMixin } from 'lightning/navigation';
+import { NavigationMixin, CurrentPageReference } from 'lightning/navigation';
+import { fireEvent } from 'c/pubsub';
 import { loadStyle } from 'lightning/platformResourceLoader';
 import ursusResources from '@salesforce/resourceUrl/ursus_park';
 import { LightningElement, track, wire } from 'lwc';
@@ -6,11 +7,21 @@ import { LightningElement, track, wire } from 'lwc';
 import searchBears from '@salesforce/apex/BearController.searchBears';
 export default class BearListNav extends NavigationMixin(LightningElement) {
   @track searchTerm = '';
+
+  @track bears;
+  @wire(CurrentPageReference) pageRef;
   @wire(searchBears, { searchTerm: '$searchTerm' })
-  bears;
+  loadBears(result) {
+    this.bears = result;
+    if (result.data) {
+      fireEvent(this.pageRef, 'bearListUpdate', result.data);
+    }
+  }
+
   connectedCallback() {
     loadStyle(this, ursusResources + '/style.css');
   }
+
   handleSearchTermChange(event) {
     // Debouncing this method: do not update the reactive property as
     // long as this function is being called within a delay of 300 ms.
@@ -22,9 +33,11 @@ export default class BearListNav extends NavigationMixin(LightningElement) {
       this.searchTerm = searchTerm;
     }, 300);
   }
+
   get hasResults() {
     return (this.bears.data.length > 0);
   }
+
   handleBearView(event) {
     // Navigate to bear record page
     this[NavigationMixin.Navigate]({
