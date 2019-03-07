@@ -3,11 +3,17 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/bear-list": [
+                "bearList/bearList.js"
+            ],
             "c/bear-location": [
                 "bearLocation/bearLocation.js"
             ],
             "c/bear-supervisor": [
                 "bearSupervisor/bearSupervisor.js"
+            ],
+            "c/bear-tile": [
+                "bearTile/bearTile.js"
             ],
             "c/bike-card": [
                 "bikeCard/bikeCard.js"
