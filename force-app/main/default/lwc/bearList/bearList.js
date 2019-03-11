@@ -43,7 +43,7 @@ export default class BearListNav extends NavigationMixin(LightningElement) {
     this[NavigationMixin.Navigate]({
       type: 'standard__recordPage',
       attributes: {
-        recordId: event.target.bear.Id,
+        recordId: event.detail,
         objectApiName: 'Bear__c',
         actionName: 'view',
       },

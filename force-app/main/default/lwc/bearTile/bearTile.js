@@ -8,7 +8,8 @@ export default class BearTile extends LightningElement {
 
   handleOpenRecordClick() {
     const selectEvent = new CustomEvent('bearview', {
-      bubbles: true
+      bubbles: true,
+      detail: this.bear.Id
     });
     this.dispatchEvent(selectEvent);
   }
