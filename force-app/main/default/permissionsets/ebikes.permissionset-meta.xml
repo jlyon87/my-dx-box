@@ -4,8 +4,44 @@
         <application>standard__LightningSales</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Age__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Birthdate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Height__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Observations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Sex__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Bear__c.Weight__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ebikes</label>
+    <license>Salesforce</license>
     <tabSettings>
         <tab>Bike_Card</tab>
         <visibility>Visible</visibility>
