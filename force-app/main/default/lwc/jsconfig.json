@@ -9,6 +9,9 @@
             "c/bear-location": [
                 "bearLocation/bearLocation.js"
             ],
+            "c/bear-map": [
+                "bearMap/bearMap.js"
+            ],
             "c/bear-supervisor": [
                 "bearSupervisor/bearSupervisor.js"
             ],
